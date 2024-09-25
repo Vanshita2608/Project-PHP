@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <!-- You can link to your CSS file here if you have any -->
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .cart-items {
+            list-style-type: none;
+            padding: 0;
+        }
+        .cart-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .cart-item img {
+            max-width: 100px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .total {
+            font-size: 50px; /* Adjust the font size as needed */
+            margin-top: 20px;
+        }
+        button {
+            font-size: 18px; /* Adjust the font size as needed */
+            padding: 10px 20px; /* Adjust padding for button size */
+            margin-top: 20px; /* Adjust margin as needed */
+            background-color: #d2d6d2; /* Green */
+            color: rgb(11, 11, 11);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c8cdc8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Cart</h1>
+        <ul class="cart-items">
+            <li class="cart-item">
+                <img src="assets\images\dish\1.png" alt="Product Image">
+                <span>Fresh Chicken Veggies:</span>
+                <span>Rs. 499</span>
+            </li>
+            <li class="cart-item">
+                <img src="assets\images\dish\3.png" alt="Product Image">
+                <span>Paneer Noodles:</span>
+                <span>Rs. 149</span>
+            </li>
+            <li class="cart-item">
+                <img src="assets\images\dish\4.png" alt="Product Image">
+                <span>Chicken Noodles:</span>
+                <span>Rs. 379</span>
+            </li>
+            
+        </ul>
+        <div>Total: Rs. 1,027</div>
+        <button onclick="redirectToBillPage()">Checkout</button>
+    </div>
+
+    <script>
+        function redirectToBillPage() {
+            // Redirecting to the bill page
+            window.location.href = "bill.php"; // Assuming your bill page is named "bill.html"
+        }
+    </script>
+</body>
+</html>
